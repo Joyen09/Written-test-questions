@@ -4,12 +4,10 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class ExcelParser {
     public static void main(String[] args) {
-        String filePath = "C:\\Users\\linjo\\Downloads\\Q3.xlsx";  // 替換為您的文件路徑
+        String filePath = "C:\\Users\\linjo\\Downloads\\Q3.xlsx";  // 替換文件路徑
         try (FileInputStream fis = new FileInputStream(filePath);
              Workbook workbook = new XSSFWorkbook(fis)) {
 
